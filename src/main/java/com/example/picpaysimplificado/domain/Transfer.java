@@ -21,12 +21,12 @@ public class Transfer {
     private BigDecimal amount;
 
     @ManyToOne
-    @JoinColumn(name="id_reciver")
-    private User reciver;
+    @JoinColumn(name="payee")
+    private User payee;
 
     @ManyToOne
-    @JoinColumn(name="id_sender")
-    private User sender;
+    @JoinColumn(name="id_payer")
+    private User payer;
 
     private LocalDateTime datetransfer;
 }
